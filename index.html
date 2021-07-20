@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Official Youtube Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <header id="text-box">
+        <h1 id="title">Non-Official Youtube Survey Form</h1>
+        <p id="description">Tell us about your experience to help us improve the platform </p>
+    </header>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name :
+            <input type="text" id="name" placeholder="Enter your name :" required>
+        </label>
+        
+        <label for="email" id="email-label">
+            Email :
+            <input type="email" id="email" placeholder="Enter your email :" required>
+        </label>
+        
+        <label for="number" id="number-label">
+            Age :
+            <input type="number" id="number" placeholder="How old are you?" min="10" max="70">
+        </label>
+        
+        <label for="dropdown" id="dropdown-label">
+            Which option best describes your current role?
+            <select id="dropdown" placeholder="Select current role :">
+                <option disabled value selected>Select an option</option>
+                <option value="Student">Student</option>
+                <option value="College Student">College Student</option>
+                <option value="Full Time Worker">Full Time Worker</option>
+                <option value="Part Time Worker">Part Time Worker</option>
+                <option value="Does Not Work">Does Not Work</option>
+                <option value="Others">Others</option>
+            </select>
+        </label>
+        
+        <label for="watch" id="watch-label">How often do you watch youtube ?</label>
+        <input type="radio" name="watch" value="Often" checked/>Often <br/>
+        <input type="radio" name="watch" value="Sometimes"/>Sometimes<br/>
+        <input type="radio" name="watch" value="Only In Free Time"/>Only In Free Time<br/>
+        <input type="radio" name="watch" value="Never"/>Never<br/>
+        
+        <br/>
+        <label for="watch" id="watch-label">What genre of videos do you often watch on youtube ?</label>
+        <input type="checkbox" name="watch" value="Gaming"/>Gaming <br/>
+        <input type="checkbox" name="watch" value="Vlog"/>Vlog<br/>
+        <input type="checkbox" name="watch" value="Food"/>Food<br/>
+        <input type="checkbox" name="watch" value="Comedy"/>Comedy<br/>
+        <input type="checkbox" name="watch" value="News"/>News<br/>
+        <input type="checkbox" name="watch" value="Music"/>Music<br/>
+        <input type="checkbox" name="watch" value="Others"/>Others<br/>
+        
+        <br/>
+        <label for="comments" id="comments-label">
+            Enter your comments or suggestion for youtube :
+            <textarea name="comments" id="comments" placeholder="Enter your comments or suggestion for youtube" cols="30" rows="10"></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <footer>
+        <p><b>Created by Farchan 2021</b></p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
